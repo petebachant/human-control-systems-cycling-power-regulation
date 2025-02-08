@@ -5,3 +5,6 @@ description: An investigation into human control system dynamics, specifically
   regulating power while cycling.
 git_repo_url: 
   https://github.com/petebachant/human-control-systems-cycling-power-regulation
+questions:
+  - How can we characterize the human control system that regulates power
+    while cycling?
