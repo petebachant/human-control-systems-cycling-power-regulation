@@ -8,3 +8,5 @@ git_repo_url:
 questions:
   - How can we characterize the human control system that regulates power
     while cycling?
+  - Is there anything about this control system that is much different than
+    artificial ones, which could inspire improved algorithms?
