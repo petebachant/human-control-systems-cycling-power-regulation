@@ -1,0 +1,22 @@
+schema: '2.0'
+stages:
+  import-activities:
+    cmd: "calkit import dataset petebachant/strava-analysis/data/activities --filter-paths
+      data/activities/13603843467.json --filter-paths data/activities/13567304693.json
+      --no-commit\n"
+    outs:
+    - path: data/activities
+      hash: md5
+      md5: ba543dd151535bfd8db80c3d6d158bae.dir
+      size: 4964
+      nfiles: 2
+  import-timeseries:
+    cmd: "calkit import dataset petebachant/strava-analysis/data/timeseries --filter-paths
+      \"data/timeseries/activity_id=13603843467/*\" --filter-paths \"data/timeseries/activity_id=13567304693/*\"\
+      \ --no-commit\n"
+    outs:
+    - path: data/timeseries
+      hash: md5
+      md5: 20103831ff77e780b415dcd06ad72988.dir
+      size: 195580
+      nfiles: 2

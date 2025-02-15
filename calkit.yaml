@@ -10,3 +10,27 @@ questions:
     while cycling?
   - Is there anything about this control system that is much different than
     artificial ones, which could inspire improved algorithms?
+datasets:
+  - path: data/activities
+    title: Activities
+    description: An index of all activities as raw JSON files.
+    stage:
+    imported_from:
+      project: petebachant/strava-analysis
+      path: data/activities
+      git_rev:
+      filter_paths:
+        - data/activities/13603843467.json
+        - data/activities/13567304693.json
+  - path: data/timeseries
+    title: Time series
+    description: "Time series data from all activities, Hive-partitioned
+      by activity ID.\n"
+    stage:
+    imported_from:
+      project: petebachant/strava-analysis
+      path: data/timeseries
+      git_rev:
+      filter_paths:
+        - data/timeseries/activity_id=13603843467/*
+        - data/timeseries/activity_id=13567304693/*

@@ -1,0 +1,13 @@
+outs:
+  - md5: 5750fe0fcfc4398caeaf3633aab23d0c
+    size: 103206
+    hash: md5
+    path: timeseries/activity_id=13567304693/data.parquet
+    remote: calkit:petebachant/strava-analysis
+    push: false
+  - md5: fc165209791ff3f37003165f89f6e472
+    size: 92374
+    hash: md5
+    path: timeseries/activity_id=13603843467/data.parquet
+    remote: calkit:petebachant/strava-analysis
+    push: false
