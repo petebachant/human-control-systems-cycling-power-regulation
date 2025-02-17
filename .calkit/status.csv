@@ -1,0 +1,2 @@
+timestamp,status,message
+2025-02-17T20:08:59.856410+00:00,in-progress,"Data is imported, but we need to be able to extract the lap data from the activities to analyze the power errors."
